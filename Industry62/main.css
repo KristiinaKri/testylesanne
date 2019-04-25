@@ -1,0 +1,40 @@
+body::after {
+	background-image: url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/centrowitzwinning-1486216163.jpg");
+	background-repeat: none;
+	background-size: cover;
+	content: "";
+	opacity: 0.2;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: -1;
+}
+table {
+	background-color: #FFFFFF;
+}
+table th:hover {
+	cursor: pointer;
+}
+#mainDiv {
+	margin: 0 auto;
+	padding: 20px;
+}
+.arrow-down, .arrow-up {
+	padding-right: 10px;
+}
+.arrow-down:after, .arrow-up:after {
+	content: " ";
+	position: relative;
+	left: 2px;
+	border: 8px solid transparent;
+}
+.arrow-down:after {
+	top: 10px;
+	border-top-color: black;
+}
+.arrow-up:after {
+	bottom: 15px;
+	border-bottom-color: black;
+}
