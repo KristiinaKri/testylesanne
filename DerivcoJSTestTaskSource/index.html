@@ -1,0 +1,114 @@
+<DOCTYPE! html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Slot machine</title>
+	<link rel="icon" href="https://derivco.com/wp-content/themes/derivco-child-corporate-site/library/images/favicon.png">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+	integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="main.css">
+	<script src="main.js"></script>
+</head>
+<body>
+<div id="main" class="container">
+	<div class="winline" id="winline-top-left"></div>
+	<div class="winline" id="winline-center-left"></div>
+	<div class="winline" id="winline-bottom-left"></div>
+	<div class="winline" id="winline-top-right"></div>
+	<div class="winline" id="winline-center-right"></div>
+	<div class="winline" id="winline-bottom-right"></div>
+	<div class="row" style="padding: 20px">
+		<div class="reel" id="reel1">
+			<div id="images1-1" style="position: absolute"></div>
+			<div id="images1-2" style="position: absolute; top: -605"></div>
+		</div>
+		<div class="reel" id="reel2">
+			<div id="images2-1" style="position: absolute"></div>
+			<div id="images2-2" style="position: absolute; top: -605"></div>
+		</div>
+		<div class="reel" id="reel3">
+			<div id="images3-1" style="position: absolute"></div>
+			<div id="images3-2" style="position: absolute; top: -605"></div>
+		</div>
+		<div class="row game-area">
+			<form>
+				<input type="button" class="btn btn-warning btn-block spin-btn" id="spin" value="S P I N" onclick="checkSpin()">
+				<div class="row balance">
+					<div class="col money">
+						<img src="https://image.flaticon.com/icons/svg/138/138292.svg">
+						<img src="https://image.flaticon.com/icons/svg/138/138292.svg">
+						<img src="https://image.flaticon.com/icons/svg/138/138292.svg">
+						<img src="https://image.flaticon.com/icons/svg/138/138292.svg">
+						<img src="https://image.flaticon.com/icons/svg/138/138292.svg"> :
+					</div>
+					<div class="col">
+						<input type="number" id="balance" placeholder="0" min="1" max="5000">
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="row paytable">
+		<div class="combination">
+			<img src="https://image.flaticon.com/icons/svg/108/108517.svg" style="padding: 15px"> + 
+			<img src="Reel/Cherry.png"> + 
+			<img src="Reel/Cherry.png"> + 
+			<img src="Reel/Cherry.png"> = 4000
+		</div>
+		<div class="combination">
+			<img src="https://image.flaticon.com/icons/svg/108/108525.svg" style="padding: 15px"> + 
+			<img src="Reel/Cherry.png"> + 
+			<img src="Reel/Cherry.png"> + 
+			<img src="Reel/Cherry.png"> = 2000
+		</div>
+		<div class="combination">
+			<img src="https://image.flaticon.com/icons/svg/108/108518.svg" style="padding: 15px"> + 
+			<img src="Reel/Cherry.png"> + 
+			<img src="Reel/Cherry.png"> + 
+			<img src="Reel/Cherry.png"> = 1000
+		</div>
+		<div class="combination">
+			<img src="Reel/7.png" style="padding: 10px"> + 
+			<img src="Reel/7.png" style="padding: 10px"> + 
+			<img src="Reel/7.png" style="padding: 10px"> = 150
+		</div>
+		<div class="combination cherry-7-div">
+			<div class="cherry-7-symbols-div" style="margin-left: 67px">+</div>
+			<div class="cherry-7-symbols-div" style="margin-left: 158px">+</div>
+			<div class="cherry-7-symbols-div" style="margin-left: 249px">= 75</div>
+			<section class="cherry-7">
+				<img src="Reel/7.png" class="animated-img bottom-left-7">
+				<img src="Reel/Cherry.png" class="animated-img top-left-cherry">
+				<img src="Reel/7.png" class="animated-img bottom-middle-7">
+				<img src="Reel/Cherry.png" class="animated-img top-middle-cherry">
+				<img src="Reel/7.png" class="animated-img bottom-right-7">
+				<img src="Reel/Cherry.png" class="animated-img top-right-cherry">
+			</section>
+		</div>
+		<div class="combination">
+			<img src="Reel/3xBAR.png"> + 
+			<img src="Reel/3xBAR.png"> + 
+			<img src="Reel/3xBAR.png"> = 50
+		</div>
+		<div class="combination">
+			<img src="Reel/2xBAR.png"> + 
+			<img src="Reel/2xBAR.png"> + 
+			<img src="Reel/2xBAR.png"> = 20
+		</div>
+		<div class="combination">
+			<img src="Reel/BAR.png"> + 
+			<img src="Reel/BAR.png"> + 
+			<img src="Reel/BAR.png"> = 10
+		</div>
+		<div class="combination">
+			<img src="Reel/3xBAR.png"> + 
+			<img src="Reel/2xBAR.png"> + 
+			<img src="Reel/BAR.png"> = 5
+		</div>
+		<div class="col debug-btn-div">
+			<button class="btn btn-secondary debug-btn" id="debug">Debug</button>
+		</div>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,202 @@
+body {
+	background-image: url("http://1-background.com/images/stars-1/beautiful-blue-stars-fill.jpg");
+	background-repeat: repeat;
+}
+form {
+	width: 463px;
+	margin-bottom: 0px;
+}
+#main {
+	width: 527px;
+	margin: 10px auto;
+	background-color: #AAAAAA;
+	border-radius: 10px;
+	border: 2px solid #999999;
+}
+.winline {
+	width: 10px;
+	position: absolute;
+	z-index: 1;
+	border-bottom: 4px solid #DDDDDD;
+}
+#winline-top-left {
+	margin-left: 161px;
+	margin-top: 87px;
+}
+#winline-center-left {
+	margin-left: 161px;
+	margin-top: 149px;
+}
+#winline-bottom-left {
+	margin-left: 161px;
+	margin-top: 211px;
+}
+#winline-top-right {
+	margin-left: 322px;
+	margin-top: 87px;
+}
+#winline-center-right {
+	margin-left: 322px;
+	margin-top: 149px;
+}
+#winline-bottom-right {
+	margin-left: 322px;
+	margin-top: 211px;
+}
+.reel {
+	width: 151px;
+	height: 252px;
+	overflow: hidden;
+	position: relative;
+	margin: 5px;
+	background-color: #FFFFFF;
+	box-shadow: 0px 0px 10px 10px #777777 inset;
+	border-radius: 5px;
+	border: 5px solid #DDDDDD;
+}
+.game-area {
+	font-size: 20;
+	margin: auto;
+	padding: 5px;
+}
+.spin-btn {
+	font-size: 25;
+	font-weight: bold;
+	color: #FFFFFF;
+	border: 2px solid #FFFFFF;
+}
+.balance {
+	margin: auto;
+	margin-top: 10px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	background-color: #009900;
+	border: 2px solid #FFFFFF;
+}
+.money {
+	text-align: right;
+}
+.money img {
+	width: 30px;
+}
+#balance {
+	width: 220px;
+	box-shadow: none;
+}
+.paytable {
+	padding: 20px;
+	padding-top: 5px !important;
+}
+.combination {
+	font-size: 25;
+	margin: 5px;
+	padding-right: 15px;
+	background-color: #898989;
+	border: 2px solid #FFFFFF;
+}
+.combination img {
+	width: 60px;
+}
+.cherry-7-div {
+	width: 318px !important;
+	height: 58px !important;
+}
+.cherry-7-symbols-div {
+	position: absolute;
+	z-index: 1;
+	margin-top: 4px;
+}
+.cherry-7 {
+	position: relative;
+}
+.cherry-7 img {
+	position: absolute;
+}
+.animated-img {
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-duration: 6s;
+	animation-direction: alternate;
+}
+.bottom-left-7 {
+	padding: 10px;
+	animation-name: fadebl7;
+}
+.top-left-cherry {
+	animation-name: fadetlc;
+}
+@keyframes fadebl7 {
+	0% { opacity: 0; }
+	20% { opacity: 1; }
+	40% { opacity: 1; }
+	60% { opacity: 1; }
+	80% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@keyframes fadetlc {
+	0% { opacity: 1; }
+	20% { opacity: 0; }
+	40% { opacity: 0; }
+	60% { opacity: 0; }
+	80% { opacity: 1; }
+	100% { opacity: 1; }
+}
+.bottom-middle-7 {
+	padding: 10px;
+	margin-left: 91px;
+	animation-name: fadebm7;
+}
+.top-middle-cherry {
+	margin-left: 91px;
+	animation-name: fadetmc;
+}
+@keyframes fadebm7 {
+	0% { opacity: 1; }
+	20% { opacity: 0; }
+	40% { opacity: 1; }
+	60% { opacity: 0; }
+	80% { opacity: 1; }
+	100% { opacity: 0; }
+}
+@keyframes fadetmc {
+	0% { opacity: 0; }
+	20% { opacity: 1; }
+	40% { opacity: 0; }
+	60% { opacity: 1; }
+	80% { opacity: 0; }
+	100% { opacity: 1; }
+}
+.bottom-right-7 {
+	padding: 10px;
+	margin-left: 182px;
+	animation-name: fadebr7;
+}
+.top-right-cherry {
+	margin-left: 182px;
+	animation-name: fadetrc;
+}
+@keyframes fadebr7 {
+	0% { opacity: 1; }
+	20% { opacity: 1; }
+	40% { opacity: 0; }
+	60% { opacity: 0; }
+	80% { opacity: 0; }
+	100% { opacity: 1; }
+}
+@keyframes fadetrc {
+	0% { opacity: 0; }
+	20% { opacity: 0; }
+	40% { opacity: 1; }
+	60% { opacity: 1; }
+	80% { opacity: 1; }
+	100% { opacity: 0; }
+}
+.debug-btn-div {
+	text-align: right;
+	padding: 5px;
+}
+.debug-btn {
+	font-size: 25;
+	border-radius: 45%;
+	border: 2px solid #666666;
+}
